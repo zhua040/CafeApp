@@ -43,6 +43,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_Foods"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -67,7 +68,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="10dp"
-                    android:text="Breakfast/Lunch"
+                    android:text="Dishes"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
 
