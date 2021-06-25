@@ -11,7 +11,7 @@ import com.example.littlekingsapp.drinks.Drink_MainAtivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView CardDrinks;
+    private CardView CardDrinks, CardFoods;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

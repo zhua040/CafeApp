@@ -73,8 +73,8 @@ public class DrinkOrderAdapter extends RecyclerView.Adapter<DrinkOrderAdapter.Vi
             // Let's get the position of the view in the list and then work on it
             int position = getAdapterPosition();
             if (position == 0){
-                //Intent intent = new Intent(context, InfoActivity.class);
-                //context.startActivity(intent);
+                Intent intent = new Intent(context, Drink_InfoActivity.class);
+                context.startActivity(intent);
             }
         }
     }
