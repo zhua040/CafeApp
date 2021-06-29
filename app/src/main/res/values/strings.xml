@@ -30,4 +30,5 @@
         (US) The coffee drink cappuccino made with chocolate.  </string>
 
     <string name="flatwhite">A flat white is a coffee drink consisting of espresso with microfoam (steamed milk with small, fine bubbles and a glossy or velvety consistency)</string>
+    <string name="title_activity_maps__main">Map</string>
 </resources>
