@@ -26,7 +26,7 @@ public class MapsActivity_Main extends FragmentActivity implements OnMapReadyCal
         mapFragment.getMapAsync(this);
     }
 
-    
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;

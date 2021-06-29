@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:background="@drawable/login_back_ground"
-    tools:context=".login.Login_Mian">
+    tools:context=".login.SignUp_Main">
 
 
     <TextView

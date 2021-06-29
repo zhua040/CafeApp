@@ -9,11 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.littlekingsapp.MainActivity;
 import com.example.littlekingsapp.R;
-import com.example.littlekingsapp.foods.Food_MainActivity;
 
-public class Login_Mian extends AppCompatActivity {
+public class SignUp_Main extends AppCompatActivity {
 
     EditText usename, password, rePassword;
     Button btnSignUp, btnSignIn;
@@ -43,7 +41,7 @@ public class Login_Mian extends AppCompatActivity {
                 String repsw = rePassword.getText().toString();
 
                 if (user.equals("")||psw.equals("")||repsw.equals("")){
-                    Toast.makeText(Login_Mian.this, "Please fill up all fields.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUp_Main.this, "Please fill up all fields.", Toast.LENGTH_SHORT).show();
                 } else {
                     if (psw.equals(repsw)){
                         //check user already exist or not
@@ -52,22 +50,22 @@ public class Login_Mian extends AppCompatActivity {
                             //new user can be created
                             Boolean registrationResult = userLoginDB.insertData(user, psw);
                             if(registrationResult == true){
-                                Toast.makeText(Login_Mian.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(Login_Mian.this, LoginActivity.class);
+                                Toast.makeText(SignUp_Main.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(SignUp_Main.this, LoginActivity.class);
                                 startActivity(intent);
 
                             }else {
-                                Toast.makeText(Login_Mian.this, "Registration fail!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUp_Main.this, "Registration fail!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
-                            Toast.makeText(Login_Mian.this, "User is already Exists.\n please Sign-In.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUp_Main.this, "User is already Exists.\n please Sign-In.", Toast.LENGTH_SHORT).show();
 
                         }
 
                     }
                     else{
-                        Toast.makeText(Login_Mian.this, "Password not matching.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUp_Main.this, "Password not matching.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -75,7 +73,7 @@ public class Login_Mian extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login_Mian.this, LoginActivity.class);
+                Intent intent = new Intent(SignUp_Main.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

@@ -8,13 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.littlekingsapp.Map.MapsActivity_Main;
+import com.example.littlekingsapp.QRcode.QR_Code_MainActivity;
 import com.example.littlekingsapp.drinks.Drink_MainAtivity;
 import com.example.littlekingsapp.foods.Food_MainActivity;
-import com.example.littlekingsapp.login.Login_Mian;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView CardDrinks, CardFoods, CardMap;
+    private CardView CardDrinks, CardFoods, CardMap, CardLoyalty;
 
     String shortName;
 
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         CardDrinks = (CardView) findViewById(R.id.card_Drinks);
         CardFoods = (CardView) findViewById(R.id.card_Foods);
         CardMap = (CardView) findViewById(R.id.card_map);
+        CardLoyalty = (CardView) findViewById(R.id.card_Loyalty);
 
 
         //Set on_clickingListener for each card
@@ -55,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MapsActivity_Main.class);
+                startActivity(intent);
+            }
+        });
+
+        CardLoyalty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QR_Code_MainActivity.class);
+                startActivity(intent);
+                //extra data with intent
+                intent.putExtra("user_name", shortName);
                 startActivity(intent);
             }
         });
