@@ -40,7 +40,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/breakfast"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -73,7 +73,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/lunch2"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -106,7 +106,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/brunch"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -139,7 +139,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/salad"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -172,7 +172,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/sides"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -205,7 +205,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/lunch"
+                    android:src="@drawable/desert"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
