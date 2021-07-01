@@ -11,7 +11,7 @@ import com.example.littlekingsapp.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Drink_MainAtivity extends AppCompatActivity {
+public class  Drink_MainAtivity extends AppCompatActivity {
 
     List<DrinkModel> modelList;
     RecyclerView recyclerView;
